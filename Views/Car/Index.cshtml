@@ -1,0 +1,14 @@
+@model List<p48_lessons_asp.Models.CarModel>
+
+
+@{
+    foreach (CarModel carModel in Model)
+    {
+        <div>
+            <h4>Brand: @carModel.Brand</h4>
+            <h4>Model: @carModel.Model</h4>
+            <h4>Price: @carModel.Price</h4>
+            <br>
+        </div>
+    }
+}
